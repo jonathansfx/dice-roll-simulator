@@ -9,8 +9,6 @@ function btnClicked () {
 let randNum = Math.random();
 console.log(randNum)
 
-
-
 if (randNum < 0.167) {
     output.innerHTML = "2"
 } else if (randNum < 0.250) {
