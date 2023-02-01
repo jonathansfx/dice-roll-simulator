@@ -6,9 +6,20 @@
     </head>
 <body>
     <h1>Dice Roll</h1>
-    <p>Click the dice image to roll the random sum of two dice</p>
-<img src="img/gamecube-white-dice-png.png" alt="dice image" width="300px" id="buttonHTML">
-<h2>Number: <span id="outputHTML">...</span> </h2>
+  <div>
+    <label for="conditions">Choose roll conditions</label>
+    <select id="rollHTML">
+        <option value="rollx1HTML">Roll Once</option>
+        <option value="rollx5HTML">Roll Five Times</option>
+        <option value="rollx10HTML">Roll Ten Times</option>
+        <option value="rollSnakeEyes">Snake Eyes</option>
+    </select>
+</div>
+<img src="img/gamecube-white-dice-png.png" alt="dice image" width="300px" id="button">
+<h2>Sum: <span id="sumHTML"></span></h2>
+<div><h2>1st Dice: <span id="firstDiceHTML">...</span></h2></div> <div><h2>2nd Dice: <span id="secondDiceHTML">...</span></h2></div>
+
+    <script src="functions.js"></script>
     <script src="main.js"></script>
 </body>
     </html>
